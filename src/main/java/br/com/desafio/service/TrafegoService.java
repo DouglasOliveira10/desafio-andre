@@ -1,14 +1,8 @@
 package br.com.desafio.service;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 import br.com.desafio.dto.ComandoDTO;
-import br.com.desafio.dto.PlanetaDTO;
 import br.com.desafio.exception.SondaException;
 import br.com.desafio.model.Direcao;
-import br.com.desafio.model.SondaEntity;
 import br.com.desafio.repository.SondaRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -32,28 +26,28 @@ public class TrafegoService {
 		var planetaEntity = sondaEntity.getPlanetaEntity();
 
 		if(comandoDTO.getComando() == ComandoDTO.Comando.M) {
-			if(sondaEntity.getDirecao() == Direcao.CIMA) {
+			if(sondaEntity.getDirecao() == Direcao.NORTE) {
 				var posicaoY = sondaEntity.getPosicaoY();
 				posicaoY -= 1;
 				posicaoY = ajustarPosicaoY(posicaoY, planetaEntity);
 				sondaEntity.setPosicaoY(posicaoY);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.BAIXO) {
+			else if(sondaEntity.getDirecao() == Direcao.SUL) {
 				var posicaoY = sondaEntity.getPosicaoY();
 				posicaoY += 1;
 				posicaoY = ajustarPosicaoY(posicaoY, planetaEntity);
 				sondaEntity.setPosicaoY(posicaoY);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.DIREITA) {
+			else if(sondaEntity.getDirecao() == Direcao.LESTE) {
 				var posicaoX = sondaEntity.getPosicaoX();
 				posicaoX += 1;
 				posicaoX = ajustarPosicaoX(posicaoX, planetaEntity);
 				sondaEntity.setPosicaoX(posicaoX);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.ESQUERDA) {
+			else if(sondaEntity.getDirecao() == Direcao.OESTE) {
 				var posicaoX = sondaEntity.getPosicaoX();
 				posicaoX -= 1;
 				posicaoX = ajustarPosicaoX(posicaoX, planetaEntity);
@@ -62,38 +56,38 @@ public class TrafegoService {
 		}
 
 		else if(comandoDTO.getComando() == ComandoDTO.Comando.L) {
-			if(sondaEntity.getDirecao() == Direcao.CIMA) {
-				sondaEntity.setDirecao(Direcao.ESQUERDA);
+			if(sondaEntity.getDirecao() == Direcao.NORTE) {
+				sondaEntity.setDirecao(Direcao.OESTE);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.ESQUERDA) {
-				sondaEntity.setDirecao(Direcao.BAIXO);
+			else if(sondaEntity.getDirecao() == Direcao.OESTE) {
+				sondaEntity.setDirecao(Direcao.SUL);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.BAIXO) {
-				sondaEntity.setDirecao(Direcao.DIREITA);
+			else if(sondaEntity.getDirecao() == Direcao.SUL) {
+				sondaEntity.setDirecao(Direcao.LESTE);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.DIREITA) {
-				sondaEntity.setDirecao(Direcao.CIMA);
+			else if(sondaEntity.getDirecao() == Direcao.LESTE) {
+				sondaEntity.setDirecao(Direcao.NORTE);
 			}
 		}
 
 		else if(comandoDTO.getComando() == ComandoDTO.Comando.R) {
-			if(sondaEntity.getDirecao() == Direcao.CIMA) {
-				sondaEntity.setDirecao(Direcao.DIREITA);
+			if(sondaEntity.getDirecao() == Direcao.NORTE) {
+				sondaEntity.setDirecao(Direcao.LESTE);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.DIREITA) {
-				sondaEntity.setDirecao(Direcao.BAIXO);
+			else if(sondaEntity.getDirecao() == Direcao.LESTE) {
+				sondaEntity.setDirecao(Direcao.SUL);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.BAIXO) {
-				sondaEntity.setDirecao(Direcao.ESQUERDA);
+			else if(sondaEntity.getDirecao() == Direcao.SUL) {
+				sondaEntity.setDirecao(Direcao.OESTE);
 			}
 
-			else if(sondaEntity.getDirecao() == Direcao.ESQUERDA) {
-				sondaEntity.setDirecao(Direcao.CIMA);
+			else if(sondaEntity.getDirecao() == Direcao.OESTE) {
+				sondaEntity.setDirecao(Direcao.NORTE);
 			}
 		}
 

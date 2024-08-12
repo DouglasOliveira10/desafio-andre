@@ -24,7 +24,7 @@ public class SondaService {
 
         entity.setPosicaoY(0);
         entity.setPosicaoX(0);
-        entity.setDirecao(Direcao.DIREITA);
+        entity.setDirecao(Direcao.LESTE);
         entity.setPlanetaEntity(getPlanetaEntity(dto));
 
         repository.save(entity);
