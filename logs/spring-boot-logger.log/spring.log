@@ -1,0 +1,595 @@
+2024-08-12 11:45:49,311 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 11:45:49,351 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 33656 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 11:45:49,351 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 11:45:49,352 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 11:45:50,272 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 11:45:50,320 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-08-12 11:45:50,973 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 11:45:50,983 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 11:45:50,984 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 11:45:50,984 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 11:45:51,056 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 11:45:51,057 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1668 ms
+2024-08-12 11:45:51,184 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 11:45:51,403 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 11:45:51,405 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 11:45:51,413 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 11:45:51,590 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 11:45:51,654 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 11:45:51,687 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 11:45:51,899 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 11:45:51,943 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 11:45:52,804 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 11:45:52,843 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 11:45:53,219 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 11:45:54,019 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 11:45:54,077 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 11:45:54,099 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 11:45:54,110 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 5.227 seconds (process running for 6.239)
+2024-08-12 11:45:54,698 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 11:45:54,699 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 11:45:54,702 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 3 ms
+2024-08-12 11:48:33,320 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.PlanetaController                     : Criando planeta: PlanetaDTO(id=null, nome=marte, maxX=5, maxY=5, permiteBordaInfinita=false, permitesobreposiçao=false)
+2024-08-12 11:48:33,373 ERROR  --- [http-nio-8080-exec-3]  o.a.j.l.DirectJDKLog                          : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "br.com.desafio.repository.PlanetaRepository.save(Object)" because "this.planetaRepository" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "br.com.desafio.repository.PlanetaRepository.save(Object)" because "this.planetaRepository" is null
+	at br.com.desafio.service.PlanetaService.criarPlaneta(PlanetaService.java:18)
+	at br.com.desafio.controller.PlanetaController.criarPlanete(PlanetaController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-12 11:50:42,990 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 11:50:42,993 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 11:50:42,995 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 11:50:48,871 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 11:50:48,905 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 22028 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 11:50:48,905 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 11:50:48,906 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 11:50:49,792 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 11:50:49,847 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-08-12 11:50:50,463 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 11:50:50,472 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 11:50:50,473 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 11:50:50,474 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 11:50:50,542 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 11:50:50,542 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2024-08-12 11:50:50,651 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 11:50:50,899 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 11:50:50,901 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 11:50:50,910 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 11:50:51,072 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 11:50:51,136 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 11:50:51,170 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 11:50:51,388 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 11:50:51,434 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 11:50:52,277 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 11:50:52,307 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 11:50:52,703 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 11:50:53,506 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 11:50:53,570 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 11:50:53,590 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 11:50:53,602 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 5.185 seconds (process running for 6.025)
+2024-08-12 11:50:53,993 INFO   --- [n(1)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 11:50:53,993 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 11:50:53,997 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 2 ms
+2024-08-12 11:50:57,392 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.PlanetaController                     : Criando planeta: PlanetaDTO(id=null, nome=marte, maxX=5, maxY=5, permiteBordaInfinita=false, permitesobreposiçao=false)
+2024-08-12 11:50:57,488 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.PlanetaController                     : Planeta criado
+2024-08-12 12:00:42,661 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:00:42,665 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 12:00:42,667 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 12:00:47,230 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 12:00:47,258 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 8932 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 12:00:47,258 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 12:00:47,259 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 12:00:48,036 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 12:00:48,087 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-08-12 12:00:48,636 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 12:00:48,645 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:00:48,648 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 12:00:48,648 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 12:00:48,712 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 12:00:48,712 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1424 ms
+2024-08-12 12:00:48,815 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 12:00:49,012 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 12:00:49,014 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 12:00:49,021 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 12:00:49,174 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 12:00:49,218 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 12:00:49,260 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 12:00:49,449 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 12:00:49,485 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 12:00:50,234 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 12:00:50,261 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:00:50,610 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 12:00:51,317 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 12:00:51,368 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:00:51,386 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 12:00:51,397 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.618 seconds (process running for 5.434)
+2024-08-12 12:00:51,827 INFO   --- [n(1)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 12:00:51,827 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 12:00:51,828 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 1 ms
+2024-08-12 12:00:58,564 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Criando nova Sonda: SondaDTO(id=null, nome=romulus, posicaoX=0, posicaoY=0, direcao=null, idPlaneta=1)
+2024-08-12 12:00:58,656 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Criada com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=null, idPlaneta=null)
+2024-08-12 12:18:37,091 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:18:37,095 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 12:18:37,099 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 12:19:20,430 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 12:19:20,459 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 38736 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 12:19:20,459 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 12:19:20,460 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 12:19:21,258 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 12:19:21,301 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2024-08-12 12:19:21,927 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 12:19:21,938 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:19:21,940 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 12:19:21,940 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 12:19:22,020 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 12:19:22,021 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1533 ms
+2024-08-12 12:19:22,126 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 12:19:22,336 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 12:19:22,337 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 12:19:22,345 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 12:19:22,509 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 12:19:22,577 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 12:19:22,622 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 12:19:22,825 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 12:19:22,873 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 12:19:23,690 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 12:19:23,731 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:19:24,144 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 12:19:24,889 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 12:19:24,945 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:19:24,964 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 12:19:24,975 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.948 seconds (process running for 5.673)
+2024-08-12 12:19:25,152 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 12:19:25,152 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 12:19:25,157 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 3 ms
+2024-08-12 12:19:29,614 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Criando nova Sonda: SondaDTO(id=null, nome=romulus, posicaoX=0, posicaoY=0, direcao=null, idPlaneta=1)
+2024-08-12 12:19:29,737 ERROR  --- [http-nio-8080-exec-2]  o.a.j.l.DirectJDKLog                          : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: br.com.desafio.exception.SondaException: Planeta não encontrado com id: 1] with root cause
+br.com.desafio.exception.SondaException: Planeta não encontrado com id: 1
+	at br.com.desafio.service.SondaService.getPlanetaEntity(SondaService.java:36)
+	at br.com.desafio.service.SondaService.criarSonda(SondaService.java:28)
+	at br.com.desafio.controller.SondaController.criarSonda(SondaController.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-12 12:19:40,703 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.PlanetaController                     : Criando planeta: PlanetaDTO(id=null, nome=marte, maxX=5, maxY=5, permiteBordaInfinita=false, permitesobreposiçao=false)
+2024-08-12 12:19:40,746 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.PlanetaController                     : Planeta criado
+2024-08-12 12:19:43,604 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Criando nova Sonda: SondaDTO(id=null, nome=romulus, posicaoX=0, posicaoY=0, direcao=null, idPlaneta=1)
+2024-08-12 12:19:43,614 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Criada com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:48:04,337 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:48:04,341 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 12:48:04,343 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 12:48:11,447 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 12:48:11,486 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 36032 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 12:48:11,487 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 12:48:11,488 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 12:48:12,483 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 12:48:12,531 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-08-12 12:48:13,156 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 12:48:13,166 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:48:13,167 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 12:48:13,168 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 12:48:13,250 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 12:48:13,251 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1717 ms
+2024-08-12 12:48:13,416 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 12:48:13,679 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 12:48:13,681 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 12:48:13,692 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 12:48:13,897 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 12:48:13,972 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 12:48:14,011 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 12:48:14,247 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 12:48:14,295 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 12:48:15,220 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 12:48:15,253 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:48:15,680 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 12:48:16,518 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 12:48:16,598 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:48:16,623 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 12:48:16,640 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 5.806 seconds (process running for 6.739)
+2024-08-12 12:48:16,937 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 12:48:16,937 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 12:48:16,939 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 1 ms
+2024-08-12 12:49:59,872 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:50:00,070 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:50:44,634 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:50:44,638 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 12:50:44,642 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 12:51:46,547 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 12:51:46,583 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 38664 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 12:51:46,583 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 12:51:46,584 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 12:51:47,558 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 12:51:47,605 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-08-12 12:51:48,307 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 12:51:48,319 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:51:48,321 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 12:51:48,321 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 12:51:48,399 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 12:51:48,400 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1780 ms
+2024-08-12 12:51:48,537 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 12:51:48,759 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 12:51:48,761 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 12:51:48,771 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 12:51:48,975 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 12:51:49,046 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 12:51:49,085 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 12:51:49,328 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 12:51:49,375 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 12:51:50,425 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 12:51:50,472 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 12:51:50,919 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 12:51:51,737 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 12:51:51,811 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 12:51:51,838 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 12:51:51,853 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 6.001 seconds (process running for 6.921)
+2024-08-12 12:51:52,462 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 12:51:52,462 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 12:51:52,464 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 2 ms
+2024-08-12 12:52:15,830 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.PlanetaController                     : Criando planeta: PlanetaDTO(id=null, nome=marte, maxX=5, maxY=5, permiteBordaInfinita=false, permitesobreposiçao=false)
+2024-08-12 12:52:15,973 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.PlanetaController                     : Planeta criado
+2024-08-12 12:52:19,270 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Criando nova Sonda: SondaDTO(id=null, nome=romulus, posicaoX=0, posicaoY=0, direcao=null, idPlaneta=1)
+2024-08-12 12:52:19,342 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Criada com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:53:42,837 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:53:42,851 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:53:49,314 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:53:49,320 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:54:15,600 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 12:54:15,606 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=BAIXO, idPlaneta=1)
+2024-08-12 12:54:30,345 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:54:30,350 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=-1, direcao=BAIXO, idPlaneta=1)
+2024-08-12 12:54:40,110 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 12:54:40,114 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=-1, direcao=DIREITA, idPlaneta=1)
+2024-08-12 12:54:44,296 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 12:54:44,300 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=-1, direcao=CIMA, idPlaneta=1)
+2024-08-12 12:54:52,205 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:54:52,212 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 12:54:57,759 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 12:54:57,764 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 12:55:02,984 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:55:02,988 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 12:55:03,756 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 12:55:03,762 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:07:15,667 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:07:15,670 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 13:07:15,671 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 13:07:21,063 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 13:07:21,105 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 19764 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 13:07:21,105 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 13:07:21,106 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 13:07:21,935 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 13:07:21,981 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-08-12 13:07:22,536 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 13:07:22,544 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:07:22,547 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 13:07:22,547 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 13:07:22,606 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 13:07:22,607 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2024-08-12 13:07:22,718 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 13:07:22,914 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 13:07:22,915 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 13:07:22,923 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 13:07:23,071 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 13:07:23,120 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 13:07:23,157 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 13:07:23,336 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 13:07:23,378 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 13:07:24,242 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 13:07:24,273 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:07:24,629 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 13:07:25,289 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 13:07:25,343 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:07:25,361 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 13:07:25,372 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.716 seconds (process running for 5.386)
+2024-08-12 13:07:25,933 INFO   --- [n(1)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 13:07:25,933 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 13:07:25,936 INFO   --- [n(1)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 3 ms
+2024-08-12 13:07:43,236 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:08:48,483 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:08:48,486 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 13:08:48,488 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 13:08:52,742 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 13:08:52,774 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 6124 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 13:08:52,775 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 13:08:52,775 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 13:08:53,611 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 13:08:53,655 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2024-08-12 13:08:54,213 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 13:08:54,222 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:08:54,223 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 13:08:54,223 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 13:08:54,294 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 13:08:54,295 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2024-08-12 13:08:54,409 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 13:08:54,630 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 13:08:54,632 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 13:08:54,641 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 13:08:54,787 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 13:08:54,834 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 13:08:54,869 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 13:08:55,038 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 13:08:55,076 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 13:08:55,838 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 13:08:55,868 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:08:56,226 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 13:08:56,874 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 13:08:56,929 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:08:56,951 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 13:08:56,961 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.586 seconds (process running for 5.231)
+2024-08-12 13:08:57,601 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 13:08:57,602 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 13:08:57,606 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 4 ms
+2024-08-12 13:09:08,893 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:02,758 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 13:10:02,826 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:10:18,012 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 13:10:18,016 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:28,040 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:28,044 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:29,233 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:29,238 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:30,068 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:30,073 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=3, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:31,434 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:31,437 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:33,238 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:10:33,241 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=5, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:10:39,625 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:11:38,135 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:11:38,139 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 13:11:38,141 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 13:11:42,824 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 13:11:42,857 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 3252 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 13:11:42,858 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 13:11:42,859 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 13:11:43,688 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 13:11:43,747 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2024-08-12 13:11:44,380 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 13:11:44,391 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:11:44,393 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 13:11:44,394 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 13:11:44,463 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 13:11:44,464 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1570 ms
+2024-08-12 13:11:44,567 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 13:11:44,786 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 13:11:44,788 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 13:11:44,798 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 13:11:44,985 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 13:11:45,032 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 13:11:45,059 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 13:11:45,224 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 13:11:45,260 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 13:11:45,961 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 13:11:45,989 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:11:46,347 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 13:11:47,073 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 13:11:47,123 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:11:47,140 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 13:11:47,153 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.718 seconds (process running for 5.378)
+2024-08-12 13:11:47,586 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 13:11:47,587 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 13:11:47,588 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 1 ms
+2024-08-12 13:12:20,646 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:12:20,772 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:12:24,406 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:39,096 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:39,100 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:42,480 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:42,483 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:43,224 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:43,228 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:43,918 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:43,923 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=3, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:44,776 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:44,781 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:45,524 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:13:45,529 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:13:55,259 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 13:13:55,264 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:13:56,144 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 13:13:56,148 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:01,141 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:01,144 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=5, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:24,200 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:14:24,203 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 13:14:24,206 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.
+2024-08-12 13:14:28,576 INFO   --- [  background-preinit]  o.h.v.i.u.Version                             : HV000001: Hibernate Validator 8.0.1.Final
+2024-08-12 13:14:28,618 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Starting Application using Java 21.0.4 with PID 37940 (C:\Users\douglas.feitosa\IdeaProjects\desafio\target\classes started by douglas.feitosa in C:\Users\douglas.feitosa\IdeaProjects\desafio)
+2024-08-12 13:14:28,618 DEBUG  --- [                main]  o.s.b.StartupInfoLogger                       : Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-08-12 13:14:28,619 INFO   --- [                main]  o.s.b.SpringApplication                       : No active profile set, falling back to 1 default profile: "default"
+2024-08-12 13:14:29,460 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 13:14:29,508 INFO   --- [                main]  o.s.d.r.c.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-08-12 13:14:30,085 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat initialized with port 8080 (http)
+2024-08-12 13:14:30,093 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:14:30,095 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting service [Tomcat]
+2024-08-12 13:14:30,095 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-12 13:14:30,162 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Initializing Spring embedded WebApplicationContext
+2024-08-12 13:14:30,163 INFO   --- [                main]  .s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
+2024-08-12 13:14:30,269 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Starting...
+2024-08-12 13:14:30,459 INFO   --- [                main]  c.z.h.p.HikariPool                            : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/db user=SA
+2024-08-12 13:14:30,461 INFO   --- [                main]  c.z.h.HikariDataSource                        : HikariPool-1 - Start completed.
+2024-08-12 13:14:30,468 INFO   --- [                main]  o.s.b.a.h.H2ConsoleAutoConfiguration          : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/db'
+2024-08-12 13:14:30,637 INFO   --- [                main]  o.h.j.i.u.LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 13:14:30,687 INFO   --- [                main]  o.h.Version                                   : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-08-12 13:14:30,720 INFO   --- [                main]  o.h.c.i.RegionFactoryInitiator                : HHH000026: Second-level cache disabled
+2024-08-12 13:14:30,926 INFO   --- [                main]  o.s.o.j.p.SpringPersistenceUnitInfo           : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 13:14:30,973 WARN   --- [                main]  o.h.e.j.d.i.DialectFactoryImpl                : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 13:14:31,758 INFO   --- [                main]  o.h.e.t.j.p.i.JtaPlatformInitiator            : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 13:14:31,785 INFO   --- [                main]  o.s.o.j.AbstractEntityManagerFactoryBean      : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:14:32,156 WARN   --- [                main]  .o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 13:14:32,807 INFO   --- [                main]  o.s.b.a.e.w.EndpointLinksResolver             : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-12 13:14:32,861 INFO   --- [                main]  o.a.j.l.DirectJDKLog                          : Starting ProtocolHandler ["http-nio-8080"]
+2024-08-12 13:14:32,881 INFO   --- [                main]  o.s.b.w.e.t.TomcatWebServer                   : Tomcat started on port 8080 (http) with context path ''
+2024-08-12 13:14:32,892 INFO   --- [                main]  o.s.b.StartupInfoLogger                       : Started Application in 4.704 seconds (process running for 5.389)
+2024-08-12 13:14:33,400 INFO   --- [n(2)-192.168.100.135]  o.a.j.l.DirectJDKLog                          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 13:14:33,403 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Initializing Servlet 'dispatcherServlet'
+2024-08-12 13:14:33,406 INFO   --- [n(2)-192.168.100.135]  o.s.w.s.FrameworkServlet                      : Completed initialization in 2 ms
+2024-08-12 13:14:41,155 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:41,286 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:42,257 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:42,260 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=3, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:43,590 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:43,593 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:44,416 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:44,423 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:45,133 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:45,138 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:46,197 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:46,204 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:47,152 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:47,158 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=3, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:47,863 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:47,867 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:48,548 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:48,551 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:49,328 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:49,331 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:50,022 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:14:50,026 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=ESQUERDA, idPlaneta=1)
+2024-08-12 13:14:55,086 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 13:14:55,090 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:14:55,903 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 13:14:55,910 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:00,391 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:00,394 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:01,119 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:01,123 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=1, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:02,105 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:02,108 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=2, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:02,773 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:02,777 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=3, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:03,507 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:03,512 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=4, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:04,205 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:04,210 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:09,470 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=R)
+2024-08-12 13:15:09,473 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:14,331 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:14,334 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:15,137 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:15,141 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=2, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:15,838 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:15,841 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=3, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:16,543 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:16,547 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=4, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:17,255 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:17,260 INFO   --- [http-nio-8080-exec-6]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:18,189 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:18,192 INFO   --- [http-nio-8080-exec-7]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=BAIXO, idPlaneta=1)
+2024-08-12 13:15:23,528 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 13:15:23,531 INFO   --- [http-nio-8080-exec-8]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=DIREITA, idPlaneta=1)
+2024-08-12 13:15:24,474 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=L)
+2024-08-12 13:15:24,476 INFO   --- [http-nio-8080-exec-9]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:29,145 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:29,148 INFO   --- [ttp-nio-8080-exec-10]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:30,013 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:30,017 INFO   --- [http-nio-8080-exec-2]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=4, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:30,798 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:30,802 INFO   --- [http-nio-8080-exec-1]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=3, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:31,402 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:31,406 INFO   --- [http-nio-8080-exec-3]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=2, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:32,011 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:32,014 INFO   --- [http-nio-8080-exec-4]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=1, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:15:32,697 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Movendo Sonda: ComandoDTO(idSonda=1, comando=M)
+2024-08-12 13:15:32,700 INFO   --- [http-nio-8080-exec-5]  b.c.d.c.SondaController                       : Sonda Movida com sucesso: SondaDTO(id=1, nome=romulus, posicaoX=0, posicaoY=0, direcao=CIMA, idPlaneta=1)
+2024-08-12 13:16:08,385 INFO   --- [licationShutdownHook]  o.s.o.j.AbstractEntityManagerFactoryBean      : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:16:08,387 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown initiated...
+2024-08-12 13:16:08,390 INFO   --- [licationShutdownHook]  c.z.h.HikariDataSource                        : HikariPool-1 - Shutdown completed.

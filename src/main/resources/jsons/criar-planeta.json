@@ -1,0 +1,6 @@
+{
+  "nome": "marte",
+  "maxX": 5,
+  "maxY": 5,
+  "permiteBordaInfinita": false
+}
